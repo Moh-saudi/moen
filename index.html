@@ -117,11 +117,11 @@ const siteConfig={name:"مَعين",tagline:"مَعين للتعليم والت�
  partners:[{name:"الجامعات ومراكز البحوث"},{name:"المنشآت الصحية"},{name:"الفرق المالية"},{name:"المؤسسات التعليمية"},{name:"فرق التحول الرقمي"}],
  graduates:[
   {name:"البحث العلمي والدراسات العليا",program:"مسار للباحث من الفكرة إلى المناقشة",photo:"assets/images/path-research.png"},
-  {name:"إدارة الرعاية الصحية",program:"مهارات تشغيل وجودة وحوكمة قابلة للتطبيق",photo:"https://images.pexels.com/photos/23625642/pexels-photo-23625642.jpeg?auto=compress&cs=tinysrgb&w=1260"},
+  {name:"إدارة الرعاية الصحية",program:"مهارات تشغيل وجودة وحوكمة قابلة للتطبيق",photo:"https://images.pexels.com/photos/8197553/pexels-photo-8197553.jpeg?auto=compress&cs=tinysrgb&w=1260"},
   {name:"الإدارة المالية والاستثمار",program:"قرارات أوضح بالتحليل والميزانيات",photo:"assets/images/path-finance.png"},
   {name:"الذكاء الاصطناعي وتطبيقاته",program:"أدوات ذكية للعمل والإنتاجية",photo:"assets/images/path-ai.png"}
  ],
- images:{hero:"assets/images/maeen-learning-hero.png",r:"assets/images/path-research.png",h:"https://images.pexels.com/photos/23625642/pexels-photo-23625642.jpeg?auto=compress&cs=tinysrgb&w=1260",f:"assets/images/path-finance.png",a:"assets/images/path-ai.png",s:"assets/images/course-occupational-safety.png",e:"assets/images/course-protocol-etiquette.png",o:"assets/images/course-technical-office.png"}};
+ images:{hero:"assets/images/maeen-learning-hero.png",r:"assets/images/path-research.png",h:"https://images.pexels.com/photos/8197553/pexels-photo-8197553.jpeg?auto=compress&cs=tinysrgb&w=1260",f:"assets/images/path-finance.png",a:"assets/images/path-ai.png",s:"assets/images/course-occupational-safety.png",e:"assets/images/course-protocol-etiquette.png",o:"assets/images/course-technical-office.png"}};
 const categories=[
  {id:"r",name:"البحث العلمي والدراسات العليا",d:"من سؤال البحث إلى التحليل والكتابة والاستعداد للمناقشة.",p:"M4 19V5h9a4 4 0 010 8H8M8 17l3 3 5-6"},
  {id:"h",name:"إدارة الرعاية الصحية",d:"تشغيل وجودة وحوكمة المنشآت الصحية بأسلوب تطبيقي.",p:"M12 21s-8-5-8-11a4.5 4.5 0 018-2.7A4.5 4.5 0 0120 10c0 6-8 11-8 11zM12 8v6M9 11h6"},
@@ -176,7 +176,7 @@ const stLabel={open:["اطلب الحجز","طلب حجز"],interest:["سجّل 
 const stText={open:"دفعة مؤكدة",interest:"تُحدَّد الدفعة لاحقًا",full:"الدفعة مكتملة"};
 const forCat=id=>courses.filter(c=>c.cat===id||(c.tags||[]).includes(id));
 const desc=c=>`برنامج تدريبي في «${cat(c.cat).name}» يقدّم ${c.hours} ساعة من الشرح والتطبيق على موضوع «${c.title}»، ويربط الأفكار الأساسية بمواقف العمل الفعلية، مع أمثلة وتمارين تساعد المشارك على نقل ما تعلمه إلى مهامه المهنية أو بحثه العلمي بثقة ووضوح.`;
-const courseImage=c=>({r:"assets/images/path-research.png",h:"https://images.pexels.com/photos/23625642/pexels-photo-23625642.jpeg?auto=compress&cs=tinysrgb&w=1260",f:"assets/images/path-finance.png",a:"assets/images/path-ai.png",s:"assets/images/course-occupational-safety.png",e:"assets/images/course-protocol-etiquette.png",o:"https://images.pexels.com/photos/23496675/pexels-photo-23496675/free-photo-of-four-people-sitting-around-a-table-with-a-laptop.jpeg?auto=compress&cs=tinysrgb&w=1260"})[c.cat];
+const courseImage=c=>({r:"assets/images/path-research.png",h:"https://images.pexels.com/photos/8197553/pexels-photo-8197553.jpeg?auto=compress&cs=tinysrgb&w=1260",f:"assets/images/path-finance.png",a:"assets/images/path-ai.png",s:"assets/images/course-occupational-safety.png",e:"assets/images/course-protocol-etiquette.png",o:"https://images.pexels.com/photos/23496675/pexels-photo-23496675/free-photo-of-four-people-sitting-around-a-table-with-a-laptop.jpeg?auto=compress&cs=tinysrgb&w=1260"})[c.cat];
 const courseVisual=c=>`<img src="${courseImage(c)}" alt="${esc(c.title)}" loading="lazy" width="640" height="360" style="width:100%;height:100%;object-fit:cover;display:block">`;
 const beforePrice=n=>Math.ceil(n*1.35/100)*100;
 const priceHTML=n=>`<div class="price"><span class="old-price">${fmt(beforePrice(n))} ج.م</span><span>${fmt(n)} ج.م</span><small>سعر العرض</small></div>`;
